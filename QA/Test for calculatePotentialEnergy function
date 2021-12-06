@@ -1,0 +1,78 @@
+#include <iostream>
+using namespace std;
+
+double calculatePotentialEnergy1(double m, double h, double g)
+{
+	cout << "insert mass(m)" << endl;
+	cin >> m;
+
+	cout << "Insert height(h) " << endl;
+	cin >> h;
+
+	cout << "Potential energy (En / in J) = mass(m) * height(h) * gravity(g / about 9.8)  which is = " << m * h * g << " J" << endl;
+
+	double result1 = m * h * g;
+	
+	return result1;
+
+}
+
+
+double calculatePotentialEnergy2(double m, double h)
+{
+	int gTotal = 10;
+
+	cout << "insert mass(m)" << endl;
+	cin >> m;
+
+	cout << "Insert height(h) " << endl;
+	cin >> h;
+
+	cout << "Potential energy (En / in J) = mass(m) * height(h) * gravity(g / about 9.8)  which in total is = " << m * h * gTotal << " J" << endl;
+
+	double result2 = m * h * gTotal;
+
+	return result2;
+}
+
+
+void testForcalculatePotentialEnergyFunction1()
+{
+	const double m = 23, h = 3.6;
+	const double g = 9.8;
+	double J = calculatePotentialEnergy1(m, h, g);
+
+	if (J == 811.44)
+	{
+		cout << "The function has passed the test";
+	}
+	else
+	{
+		cout << "Error";
+	}
+
+}
+
+void testForcalculatePotentialEnergyFunction2()
+{
+	const double m = 23, h = 3.6;
+	const int g = 10;
+	double J = calculatePotentialEnergy1(m, h, g);
+
+	if (J == 828)
+	{
+		cout << "The function has passed the test";
+	}
+	else
+	{
+		cout << "Error";
+	}
+
+}
+
+int main()
+{
+	testForcalculatePotentialEnergyFunction1();
+	cout << endl;
+	testForcalculatePotentialEnergyFunction2();
+}
