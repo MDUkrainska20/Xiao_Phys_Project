@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+double calculatePower(double A, double t)
+{
+	cout << "insert work by force(A)" << endl;
+	cin >> A;
+
+	cout << "Insert time(t) " << endl;
+	cin >> t;
+
+	cout << "Power (P/ in W) = work by force(A) / time(t)  which is = " << A / t << " W" << endl;
+
+	double result = A / t;
+	return result;
+
+}
+
+void testForcalculatePowerFunction()
+{
+
+	const double A = 300, t = 2.5;
+	double W;
+
+	W = calculatePower(A, t);
+
+	if (W == 120)
+	{
+		cout << "The function has passed the test";
+	}
+	else
+	{
+		cout << "Error";
+	}
+
+}
+
+int main()
+{
+	testForcalculatePowerFunction();
+}
