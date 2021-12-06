@@ -1,0 +1,93 @@
+#include <iostream>
+using namespace std;
+
+double calculateSpeedTwo(double V0, double a, double t)
+{
+	double selector2;
+
+	cout << "1. Calculate with initial speed(V0)" << endl;
+	cout << "or" << endl;
+	cout << "2. Calculate with no initial speed " << endl;
+
+	cin >> selector2;
+
+	if (selector2 = 1)
+	{
+		double V0, a, t;
+
+		cout << "Insert initial speed(km/hours)" << endl;
+		cin >> V0;
+
+		cout << "Insert initial acceleration(km/hours)" << endl;
+		cin >> a;
+
+		cout << "Insert initial time(hours)" << endl;
+		cin >> t;
+
+		cout << "Speed (V / in km per hour) = initial speed(V0 / km per hours) + time(t/ in hours) / acceleration(a/ in km) which is = " << V0 + (t * a) << " km/h" << endl;
+	}
+	if (selector2 = 2)
+	{
+		double V0, a, t;
+
+		cout << "Insert initial speed(km/hours)" << endl;
+		cin >> V0;
+
+		cout << "Insert initial acceleration(km/hours)" << endl;
+		cin >> a;
+
+		cout << "Insert initial time(hours)" << endl;
+		cin >> t;
+
+		cout << "Speed (V / in km per hour) = time(t/ in hours) / acceleration(a/ in km) which is = " << V0 + t * a << " km/h" << endl;
+	}
+
+	double resolt1 = V0 + (t * a);
+	double resolt2 = V0 + t * a;
+
+	return resolt1;
+	return resolt2;
+
+}
+
+void TestForcalculateSpeedTwoFunction1()
+{
+	const double V0 = 10, a = 5, t = 2;
+	double Speed = 0;
+
+	Speed = calculateSpeedTwo(V0, a, t);
+
+	if (Speed == 20)
+	{
+		cout << "Function passed the test";
+	}
+	else
+	{
+		cout << "Error";
+	}
+
+}
+
+void TestForcalculateSpeedTwoFunction2()
+{
+	const double V0 = 20, a = 4, t = 6;
+	double Speed = 0;
+
+	Speed = calculateSpeedTwo(V0, a, t);
+
+	if (Speed == 44)
+	{
+		cout << "Function passed the test";
+	}
+	else
+	{
+		cout << "Error";
+	}
+}
+
+int main()
+{
+	TestForcalculateSpeedTwoFunction1();
+	cout << endl;
+	TestForcalculateSpeedTwoFunction2();
+}
