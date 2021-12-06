@@ -1,1 +1,40 @@
+#include <iostream>
+using namespace std;
 
+double calculateSpeedOne(double S, double t)
+{
+
+	cout << "insert time(hours):" << endl;
+	cin >> t;
+
+	cout << "Insert lenght of the way(km): " << endl;
+	cin >> S;
+
+	cout << "Speed (V/ in km per hour) = time(t/ in hours) / path(S/ in km) which is = " << S / t << " km/h" << endl;
+
+	double resolt = S / t;
+	return resolt;
+
+}
+
+void testForcalculateSpeedOneFunction()
+{
+	const double S = 250, t = 10; 
+	double V;
+	V = calculateSpeedOne(S, t);
+
+	if (V == 25)
+	{
+		cout << "Function passed the test";
+	}
+	else
+	{
+		cout << "Error";
+	}
+
+}
+
+int main()
+{
+	testForcalculateSpeedOneFunction();
+}
