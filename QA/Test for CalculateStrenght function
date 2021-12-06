@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+double calculateStrength(double m, double a)
+{
+	cout << "insert acceleration(km/hours)" << endl;
+	cin >> a;
+
+	cout << "Insert mass(m) " << endl;
+	cin >> m;
+
+	cout << "Strength (F/ in N) = acceleration(a) * mass(m) which is = " << m * a << " N" << endl;
+
+	double result = m * a;
+	return result;
+}
+
+void testForCalculateStrenghtFunction()
+{
+	const double m = 50, a = 25;
+	double N;
+
+	N = calculateStrength(m, a);
+
+	if (N == 1250)
+	{
+		cout << "The function has passed the test";
+	}
+	else
+	{
+		cout << "Error";
+	}
+
+}
+
+int main()
+{
+	testForCalculateStrenghtFunction();
+}
