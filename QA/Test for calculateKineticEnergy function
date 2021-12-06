@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+double calculateKineticEnergy(double m, double v)
+{
+	cout << "insert mass(m)" << endl;
+	cin >> m;
+
+	cout << "Insert speed(v) " << endl;
+	cin >> v;
+
+	cout << "Kinetic energy (Ek / in J) = (mass(m) * speed(V)  * speed (V) ) / 2 = " << (m * v * v) / 2 << " J" << endl;
+
+	double result = m * v * v / 2;
+	return result;
+}
+
+
+void testForcalculateKineticEnergyFunction()
+{
+
+	const double m = 4, v = 6;
+	double J;
+
+	J = calculateKineticEnergy(m, v);
+
+	if (J == 72)
+	{
+		cout << "The function has passed the test";
+	}
+	else
+	{
+		cout << "Error";
+	}
+
+}
+
+int main()
+{
+	testForcalculateKineticEnergyFunction();
+}
