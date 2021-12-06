@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+double calculateWorkByForce(double F, double S)
+{
+
+	cout << "insert path(S)" << endl;
+	cin >> S;
+
+	cout << "Insert strength(F) " << endl;
+	cin >> F;
+
+	cout << "Work by force (A/ in J) = path(S) * strength(F)  which is = " << F * S << " J" << endl;
+
+	double result = F * S;
+	return result;
+}
+
+void testForcalculateWorkByForceFunction()
+{
+
+	const double S = 25, F = 10;
+	double J;
+
+	J = calculateWorkByForce(F, S);
+
+	if (J == 250)
+	{
+		cout << "The function has passed the test";
+	}
+	else
+	{
+		cout << "Error";
+	}
+
+}
+
+int main()
+{
+	testForcalculateWorkByForceFunction();
+}
