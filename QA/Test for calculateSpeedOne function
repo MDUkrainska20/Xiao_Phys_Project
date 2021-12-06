@@ -12,8 +12,8 @@ double calculateSpeedOne(double S, double t)
 
 	cout << "Speed (V/ in km per hour) = time(t/ in hours) / path(S/ in km) which is = " << S / t << " km/h" << endl;
 
-	double resolt = S / t;
-	return resolt;
+	double result = S / t;
+	return result;
 
 }
 
