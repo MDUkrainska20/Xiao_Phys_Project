@@ -42,11 +42,11 @@ double calculateSpeedTwo(double V0, double a, double t)
 		cout << "Speed (V / in km per hour) = time(t/ in hours) / acceleration(a/ in km) which is = " << V0 + t * a << " km/h" << endl;
 	}
 
-	double resolt1 = V0 + (t * a);
-	double resolt2 = V0 + t * a;
+	double result1 = V0 + (t * a);
+	double result2 = V0 + t * a;
 
-	return resolt1;
-	return resolt2;
+	return result1;
+	return result2;
 
 }
 
