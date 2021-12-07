@@ -1,0 +1,168 @@
+#include <iostream>
+
+using namespace std;
+
+void calculateSpeedOne()
+{
+	double S, t;
+
+	cout << "insert time(hours):" << endl;
+	cin >> t;
+
+	cout << "Insert lenght of the way(km): " << endl;
+	cin >> S;
+
+	cout << "Speed (V/ in km per hour) = time(t/ in hours) / path(S/ in km) which is = " << S / t << " km/h" << endl;
+}
+
+void calculateSpeedTwo()
+{
+	double selector2;
+
+	cout << "1. Calculate with initial speed(V0)" << endl;
+	cout << "or" << endl;
+	cout << "2. Calculate with no initial speed " << endl;
+
+	cin >> selector2;
+
+	if (selector2 = 1)
+	{
+		double V0, a, t;
+
+		cout << "Insert initial speed(km/hours)" << endl;
+		cin >> V0;
+
+		cout << "Insert initial acceleration(km/hours)" << endl;
+		cin >> a;
+
+		cout << "Insert initial time(hours)" << endl;
+		cin >> t;
+
+		cout << "Speed (V / in km per hour) = initial speed(V0 / km per hours) + time(t/ in hours) / acceleration(a/ in km) which is = " << V0 + (t * a) << " km/h" << endl;
+	}
+	if (selector2 = 2)
+	{
+		double V0, a, t;
+
+		cout << "Insert initial speed(km/hours)" << endl;
+		cin >> V0;
+
+		cout << "Insert initial acceleration(km/hours)" << endl;
+		cin >> a;
+
+		cout << "Insert initial time(hours)" << endl;
+		cin >> t;
+
+		cout << "Speed (V / in km per hour) = time(t/ in hours) / acceleration(a/ in km) which is = " << V0 + t * a << " km/h" << endl;
+	}
+}
+
+void calculateStrength()
+{
+	double m, a;
+
+	cout << "insert acceleration(km/hours)" << endl;
+	cin >> a;
+
+	cout << "Insert mass(m) " << endl;
+	cin >> m;
+
+	cout << "Strength (F/ in N) = acceleration(a) * mass(m) which is = " << m * a << " N" << endl;
+}
+
+void calculateFrictionForce()
+{
+	double k, N;
+
+	cout << "insert reaction force(N)" << endl;
+	cin >> k;
+
+	cout << "Insert coefficient of friction(k) " << endl;
+	cin >> N;
+
+	cout << "Friction force (f/ in N) = reaction force(N) * coefficient of friction(k) which is = " << k * N << " N" << endl;
+}
+
+void calculateWorkByForce()
+{
+	double F, S;
+
+	cout << "insert path(S)" << endl;
+	cin >> S;
+
+	cout << "Insert strength(F) " << endl;
+	cin >> F;
+
+	cout << "Work by force (A/ in J) = path(S) * strength(F)  which is = " << F * S << " J" << endl;
+}
+
+void calculatePower()
+{
+	double A, t;
+
+	cout << "insert work by force(A)" << endl;
+	cin >> A;
+
+	cout << "Insert time(t) " << endl;
+	cin >> t;
+
+	cout << "Power (P/ in W) = work by force(A) / time(t)  which is = " << A / t << " W" << endl;
+}
+
+void calculateKineticEnergy()
+{
+	double m, v;
+
+	cout << "insert mass(m)" << endl;
+	cin >> m;
+
+	cout << "Insert speed(v) " << endl;
+	cin >> v;
+
+	cout << "Kinetic energy (Ek / in J) = (mass(m) * speed(V)  * speed (V) ) / 2 = " << (m * v * v) / 2 << " J" << endl;
+}
+
+void calculatePotentialEnergy()
+{
+	double m, h;
+
+	int gTotal = 10;
+	double g = 9.8;
+
+	cout << "insert mass(m)" << endl;
+	cin >> m;
+
+	cout << "Insert height(h) " << endl;
+	cin >> h;
+
+	cout << "Potential energy (En / in J) = mass(m) * height(h) * gravity(g / about 9.8)  which is = " << m * h * g << " or in total " << m * h * gTotal << " J" << endl;
+}
+
+int main()
+{
+	int selector;
+
+	cout << "    Select formula by inserting the number:" << endl;
+	cout << " | 1. Calculate speed (V)                             |" << endl;
+	cout << " | 2. Calculate speed with acceleration movement (V)  |" << endl;
+	cout << " | 3. Calculate strength (F)                          |" << endl;
+	cout << " | 4. Calculate friction force (f)                    |" << endl;
+	cout << " | 5. Calculate work by force (A)                     |" << endl;
+	cout << " | 6. Calculate power (P)                             |" << endl;
+	cout << " | 7. Calculate kinetic energy (Ek)                   |" << endl;
+	cout << " | 8. Calculate potential energy (En)                 |" << endl;
+
+	cin >> selector;
+
+	switch (selector)
+	{
+	case 1: calculateSpeedOne(); break;
+	case 2: calculateSpeedTwo(); break;
+	case 3: calculateStrength(); break;
+	case 4: calculateFrictionForce(); break;
+	case 5: calculateWorkByForce(); break;
+	case 6: calculatePower(); break;
+	case 7: calculateKineticEnergy(); break;
+	case 8: calculatePotentialEnergy(); break;
+	}
+}
