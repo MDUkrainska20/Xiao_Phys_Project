@@ -29,4 +29,4 @@ We created a small program that counts some formulas in physics
 Here you can check out our presentation and documentation
 
 [Presentation](https://codingburgas-my.sharepoint.com/:p:/g/personal/mdukrainska20_codingburgas_bg/ERi-WxfwvSBIiBJ_3Rqj5hAB9xqlNElJOIxwtdyC-gDudw?e=XSsHVm)
-[Documentation]
+[Documentation](https://codingburgas-my.sharepoint.com/:w:/g/personal/mdukrainska20_codingburgas_bg/ERQ85ianacxEuWx67xv9vxIBsnQtTzyffu_qkmTe1zh0Rg?e=ClDJup) 
